@@ -479,5 +479,109 @@ img.mythpstyle3 {
 	margin: 20px;
 }
 
+
+/*** root ***/
+
+:root {
+  /** Text Shadow **/
+	--text-shadow-dark: -0.6px -0.6px 0 rgb(24, 24, 24, 0.2), 0.6px -0.6px 0 rgb(24, 24, 24, 0.2), -0.6px 0.6px 0 rgb(24, 24, 24, 0.2), 0.6px 0.6px 0 rgb(24, 24, 24, 0.2), 1px 1px 0 rgb(24, 24, 24, 0.2);
+  /** Responsive Font Sizes **/
+	--bodytext: clamp(0.9375rem, 0.925rem + 0.0625vw, 1rem);
+	--extrasmalltext: clamp(0.7rem, 0.6625rem + 0.125vw, 0.8125rem);
+	--smalltext: clamp(0.75rem, 0.7125rem + 0.1875vw, 0.9375rem);
+	--mediumtext: clamp(1.5rem, 1.375rem + 0.625vw, 2.125rem);
+	--largetext: clamp(2.5rem, 2.4908876500857633rem + 0.26801029159519724vw, 2.8125rem);
+	--extralargetext: clamp(3.4375rem, 3.3125rem + 0.625vw, 4.0625rem);
+  /** Fonts **/
+	--serif: "DM Serif Text", serif;
+	--sans: rethink sans, sans;
+  /** Tabbed forum **/
+	--margin-increment: 665px;
+}
+
+html.lightMode {
+  /** background colors **/
+	--bg0: rgb(229, 229, 229, 0.8);
+	--bg1: rgb(236, 236, 236, 0.7);
+	--bg2: rgb(241, 241, 241, 0.6);
+	--bg3: rgb(246, 246, 246, 0.5);
+	--rgbbackground: rgba(255, 255, 255, 0.4);
+  /** images **/
+	--bodypic: url("https://files.jcink.net/uploads2/lumiesq/Images/marble01edit_1_.jpg");
+	--texture: url("https://i.ibb.co/X803X0p/subtle-dots.png");
+	--flowerfilter: multiply;
+	--floweropacity: 0.17;
+  /**borders **/
+	--borderdark: #ddd;
+	--border: #fbfbfb;
+	--box-shadow: 4px 4px 12px rgb(33 33 33 / 6%);
+  /** Text **/
+	--text: #696969;
+	--text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+	--text-shadow-thick: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+html.darkMode {
+  /** background colors **/
+	--bg0: rgb(24, 24, 24, 0.7);
+	--bg1: rgb(34, 34, 34, 0.7);
+	--bg2: rgb(40, 40, 40, 0.7);
+	--bg3: rgb(48, 48, 48, 0.7);
+	--rgbbackground: rgba(0, 0, 0, 0.35);
+	--bodypic: url("https://files.jcink.net/uploads2/lumiesq/Images/marble01edit_2_.jpg");
+	--texture: url("https://i.ibb.co/X803X0p/subtle-dots.png");
+	--flowerfilter: soft-light;
+	--floweropacity: 0.15;
+  /** images **/
+	--border: #333;
+	--borderdark: #181818;
+	--box-shadow: 4px 4px 12px rgb(33 33 33 / 6%);
+  /** Text **/
+	--text: #eee;
+	--text-shadow: -0.6px -0.6px 0 #222, 0.6px -0.6px 0 #222, -0.6px 0.6px 0 #222, 0.6px 0.6px 0 #222, 1px 1px 0 #222;
+	--text-shadow-thick: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+}
+
+html {
+	font: 500 var(--bodytext) / 1.85 var(--sans);
+	scroll-behavior: smooth;
+	color: var(--text);
+	min-height: 0vw;
+	overflow-x: hidden;
+	letter-spacing: 0.5px;
+}
+/** Custom Scrollbars **/
+
+fieldset::-webkit-scrollbar {
+	width: 8px;
+	background-color: var(--bg0);
+	border: 1px solid var(--border);
+	border-radius: 2px;
+}
+
+fieldset::-webkit-scrollbar-thumb {
+	background: rgb(var(--gbg1));
+	border: 1px solid var(--border);
+}
+/** Tooltips **/
+
+#s-m-t-tooltip {
+	z-index: 999999;
+	font: 700 var(--bodytext) var(--sans);
+	margin: 0 1vw;
+	padding: 4px 8px;
+	text-transform: lowercase;
+	color: var(--text);
+	background: var(--bg1);
+	border-radius: 2px;
+	border: 1px solid var(--border);
+}
+/** Hide images **/
+
+img[src="https://"], img[src=""] {
+	display: none;
+}
+
+
 </style>
 [/dohtml]
