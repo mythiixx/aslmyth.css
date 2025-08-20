@@ -22,7 +22,7 @@ display: block;
 }
 .ld-temp:before {
 content: "";
-background: url("https://i.ibb.co/hWyN4Qv/arches.png"), var(--ldaccent);
+background: url("https://i.ibb.co/hWyN4Qv/arches.png"), var(--mythldaccent);
 width: 50%;
 height: 100%;
 position: absolute;
@@ -61,7 +61,7 @@ width: 200px;!important
 text-align: left!important;
 }
 .ld-temp ld-inner h1 bb {
-color: var(--ldaccent)!important;
+color: var(--mythldaccent)!important;
 }
 .ld-temp ld-inner h2 a {
 color: #FBFBFB!important;
@@ -71,7 +71,7 @@ text-transform: lowercase!important;
 .ld-temp ld-inner h2 {
 font: 700 12px/150% raleway!important;
 color: #FBFBFB!important;
-background: var(--ldaccent)!important;
+background: var(--mythldaccent)!important;
 text-align: justify!important;
 display: table!important;
 padding: 4px 8px 4px 8px!important;
@@ -89,17 +89,17 @@ display: block;
 color: var(--ldtext)!important;
 }
 .ld-temp ld-textspace bb {
-color: var(--ldaccent)!important;
+color: var(--mythldaccent)!important;
 font: 700 14px/170% raleway!important;
 letter-spacing: .5px!important;
 }
 .ld-temp ld-textspace bb ii {
-color: var(--ldaccent)!important;
+color: var(--mythldaccent)!important;
 font: 700 14px/170% raleway!important;
 font-style: italic!important;
 }
 .ld-temp ld-textspace uu {
-background: var(--ldaccent)!important;
+background: var(--mythldaccent)!important;
 text-transform: uppercase!important;
 white-space: nowrap;
 color: #FBFBFB;
@@ -110,7 +110,7 @@ border-radius: 4px;
 }
 
 .ld-temp ld-textspace a {
-background: var(--ldaccent)!important;
+background: var(--mythldaccent)!important;
 text-transform: uppercase!important;
 white-space: nowrap;
 color: #FBFBFB;
